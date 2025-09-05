@@ -1,0 +1,12 @@
+[project]
+name = "amazon-reviews-sentiment-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pip>=25.2",
+    "scikit-learn>=1.7.1",
+    "spacy>=3.8.7",
+    "spacytextblob>=5.0.0",
+]
