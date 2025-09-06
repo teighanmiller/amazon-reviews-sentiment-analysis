@@ -4,7 +4,7 @@ This project demonstrates a **machine learning pipeline** for classifying Amazon
 
 ---
 
-## 🔍 Project Overview  
+## Project Overview  
 
 E-commerce platforms like Amazon generate massive amounts of customer reviews. Analyzing this feedback manually is impossible at scale. This project automates the process using **logistic regression with bag-of-words features**, providing an interpretable baseline model for sentiment classification.  
 
@@ -16,7 +16,7 @@ The pipeline covers:
 
 ---
 
-## 🛠️ Skills & Tools Demonstrated  
+## Skills & Tools Demonstrated  
 
 - **Natural Language Processing (NLP)**: spaCy for text cleaning and efficient batch processing.  
 - **Machine Learning**: Logistic regression as a baseline classifier for sentiment analysis.  
@@ -59,16 +59,16 @@ Amazon reviews often use repeated, high-frequency words that strongly indicate s
 
 ---
 
-## 📂 Project Structure  
-amazon-reviews-sentiment-analysis/
-│── data/ # Training & test data, model artifacts
-│── src/
-    │──preprocessing.py # Text preprocessing pipeline
-    │── sentiment_analysis.py # Model training, saving, loading, prediction
-    │── sentiment_module.py # Orchestrates training & evaluation
-    │── requirements.txt # Dependencies
+## Project Structure
+- amazon-reviews-sentiment-analysis/
+  - data/                      # Training & test data, model artifacts
+  - src/
+    - preprocessing.py         # Text preprocessing pipeline
+    - sentiment_analysis.py    # Model training, saving, loading, prediction
+    - sentiment_module.py      # Orchestrates training & evaluation
+  - requirements.txt           # Python dependencies
 
-## 💡 Key Takeaways  
+## Key Takeaways  
 
 - Built an **end-to-end machine learning workflow** from scratch.  
 - Applied **NLP techniques** and tested multiple feature extraction strategies.  
