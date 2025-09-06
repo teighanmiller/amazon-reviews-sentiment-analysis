@@ -46,7 +46,7 @@ def predict(filepath: str):
         filepath (str): Path to the dataset file to predict and evaluate.
     """
     # Initialize sentiment analysis and preprocessing objects
-    analyzer = SentimentAnalysis()
+    analyzer = SentimentAnalysis(load_existing_model=True)
     preprocessor = Preprocessing()
 
     # Preprocess text data and labels

@@ -18,7 +18,7 @@ class SentimentAnalysis:
     LOGISTIC_MODEL_PATH = "data/sentiment_model.pkl"
     VECTORIZER_PATH = "data/vectorizer.pkl"
 
-    def __init__(self, load_existing_model: bool = True):
+    def __init__(self, load_existing_model: bool = False):
         """Initialize the vectorizer and the logistic regression model."""
         self.vectorizer = CountVectorizer()
         self.model = LogisticRegression()
