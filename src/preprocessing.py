@@ -1,4 +1,5 @@
 import spacy
+import numpy as np
 from tqdm import tqdm
 from typing import Tuple
 
@@ -31,7 +32,7 @@ class Preprocessing:
             ]
             yield " ".join(tokens)
 
-    def preprocessing(self, filepath) -> Tuple[list, list]:
+    def preprocessing(self, filepath) -> Tuple[list, np.array]:
         print("Starting preprocessing....")
         data_set = self.load_file(filepath)
         print("Processing text....")
@@ -40,9 +41,11 @@ class Preprocessing:
                 item["text"] for item in tqdm(data_set, desc="Processing text data.")
             )
         )
-        processed_labels = [
-            self.convert_labels(
-                [item["label"] for item in tqdm(data_set, desc="Processing labels")]
-            )
-        ]
+        processed_labels = np.array(
+            [
+                self.convert_labels(
+                    [item["label"] for item in tqdm(data_set, desc="Processing labels")]
+                )
+            ]
+        ).flatten()
         return processed_text, processed_labels
