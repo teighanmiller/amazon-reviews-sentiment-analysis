@@ -43,6 +43,7 @@ The pipeline covers:
 Amazon reviews often include repeated, high-frequency words that strongly indicate sentiment (e.g., *“good,” “bad,” “terrible,” “amazing”*). TF-IDF slightly down-weights these frequent words, which caused a marginal drop in performance. CountVectorizer retains their full influence, giving a tiny edge in this dataset.  
 
 ---
+
 ## 📦 Data
 
 The dataset used in this project is the **Amazon Reviews for Sentiment Analysis** dataset, sourced from Kaggle. It contains millions of Amazon customer reviews labeled by sentiment, suitable for training and evaluating sentiment analysis models.
@@ -68,7 +69,34 @@ Due to their substantial size, the dataset files are **not included in this repo
 
 By following these steps, you'll have the necessary data to replicate the sentiment analysis workflow demonstrated i
 
---
+---
+## ⚡ How to Run the Full Workflow
+
+This project provides a complete pipeline for **preprocessing, training, predicting, and evaluating** sentiment analysis models. Follow the steps below to run the workflow:
+
+### 1. Prepare the Data
+Make sure both dataset files are located in the `data/` directory:
+
+- `train.ft.txt` – Training data
+- `test.ft.txt` – Test data
+
+> **Note:** See the **Data** section for instructions on downloading and extracting these files from Kaggle.
+
+### 2. Install Dependencies
+Ensure you have Python 3.7+ installed, then install the required packages:
+
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+
+### 3. Run the Pipeline
+
+Use the main script to preprocess, train, and evaluate the model:
+
+```bash
+python src/main.py
+
+---
 
 ## 🚀 How It Works  
 
