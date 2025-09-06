@@ -70,7 +70,7 @@ Due to their substantial size, the dataset files are **not included in this repo
 By following these steps, you'll have the necessary data to replicate the sentiment analysis workflow demonstrated i
 
 ---
-## ⚡ How to Run the Full Workflow
+## How to Run the Full Workflow
 
 This project provides a complete pipeline for **preprocessing, training, predicting, and evaluating** sentiment analysis models. Follow the steps below to run the workflow:
 
@@ -98,7 +98,7 @@ python src/main.py
 
 ---
 
-## 🚀 How It Works  
+## How It Works  
 
 1. **Training**  
    - Preprocess training data (`train.ft.txt`).  
