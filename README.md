@@ -43,6 +43,32 @@ The pipeline covers:
 Amazon reviews often include repeated, high-frequency words that strongly indicate sentiment (e.g., *“good,” “bad,” “terrible,” “amazing”*). TF-IDF slightly down-weights these frequent words, which caused a marginal drop in performance. CountVectorizer retains their full influence, giving a tiny edge in this dataset.  
 
 ---
+## 📦 Data
+
+The dataset used in this project is the **Amazon Reviews for Sentiment Analysis** dataset, sourced from Kaggle. It contains millions of Amazon customer reviews labeled by sentiment, suitable for training and evaluating sentiment analysis models.
+
+- **Dataset Source**: [Amazon Reviews for Sentiment Analysis on Kaggle](https://www.kaggle.com/datasets/bittlingmayer/amazonreviews/data?select=test.ft.txt.bz2)
+
+### Dataset Files
+
+- **train.ft.txt** – The training set, used to train the sentiment analysis model.
+- **test.ft.txt** – The test set, used to evaluate model performance.
+
+### Notes
+
+Due to their substantial size, the dataset files are **not included in this repository**. To use the dataset locally, follow these steps:
+
+1. **Download the Data**: Visit the Kaggle dataset page and download both `train.ft.txt.bz2` and `test.ft.txt.bz2`.
+
+2. **Extract the Files**: Decompress the `.bz2` files to obtain `train.ft.txt` and `test.ft.txt`.
+
+3. **Place the Files**: Move the extracted files into the `data/` directory of this repository.
+
+4. **Run the Pipeline**: Once the files are in place, you can execute the preprocessing, training, and prediction scripts as described in this repository.
+
+By following these steps, you'll have the necessary data to replicate the sentiment analysis workflow demonstrated i
+
+--
 
 ## 🚀 How It Works  
 
