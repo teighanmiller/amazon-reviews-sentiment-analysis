@@ -39,8 +39,8 @@ The pipeline covers:
   - **Accuracy**: ~0.887
   - Slightly lower recall on the positive class.
 
-**Why CountVectorizer performed better**:  
-Amazon reviews often use repeated, high-frequency words that strongly indicate sentiment (e.g., *“good,” “bad,” “terrible,” “amazing”*). TF-IDF down-weights these frequent words, which caused a small drop in performance. CountVectorizer retained their full influence, leading to better overall results on this dataset.  
+**Why CountVectorizer performed slightly better**:  
+Amazon reviews often include repeated, high-frequency words that strongly indicate sentiment (e.g., *“good,” “bad,” “terrible,” “amazing”*). TF-IDF slightly down-weights these frequent words, which caused a marginal drop in performance. CountVectorizer retains their full influence, giving a tiny edge in this dataset.  
 
 ---
 
@@ -89,12 +89,3 @@ If extended into production, potential improvements include:
 - Expanding to multilingual sentiment classification.  
 
 ---
-
-## Why This Project Matters  
-
-This project goes beyond a simple academic exercise—it reflects **real-world engineering workflows**:  
-- Handling raw and messy text data.  
-- Building reproducible, modular pipelines.  
-- Designing for both experimentation and deployment.  
-
-It demonstrates my ability to **take a machine learning project from data → model → evaluation → deployment**, which is the skillset sought for ML/AI engineering roles.
