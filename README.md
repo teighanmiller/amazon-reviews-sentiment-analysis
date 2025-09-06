@@ -89,6 +89,7 @@ Ensure you have Python 3.12 (3.7+) installed, then install the required packages
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
+```
 
 ### 3. Run the Pipeline
 
@@ -96,6 +97,7 @@ Use the main script to preprocess, train, and evaluate the model:
 
 ```bash
 python src/main.py
+```
 
 ---
 
