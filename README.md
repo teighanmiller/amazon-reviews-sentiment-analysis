@@ -83,7 +83,7 @@ Make sure both dataset files are located in the `data/` directory:
 > **Note:** See the **Data** section for instructions on downloading and extracting these files from Kaggle.
 
 ### 2. Install Dependencies
-Ensure you have Python 3.7+ installed, then install the required packages:
+Ensure you have Python 3.12 (3.7+) installed, then install the required packages in a virtual environment:
 
 ```bash
 pip install -r requirements.txt
@@ -119,7 +119,7 @@ python src/main.py
   - src/
     - preprocessing.py         # Text preprocessing pipeline
     - sentiment_analysis.py    # Model training, saving, loading, prediction
-    - sentiment_module.py      # Orchestrates training & evaluation
+    - main.py      # Orchestrates training & evaluation
   - requirements.txt           # Python dependencies
 
 ## Key Takeaways  
@@ -127,10 +127,6 @@ python src/main.py
 - Built an **end-to-end machine learning workflow** from scratch.  
 - Applied **NLP techniques** and tested multiple feature extraction strategies.  
 - Learned the importance of **choosing the right representation** (CountVectorizer outperformed TF-IDF on this dataset).  
-- Designed the system to be easily extensible, including support for:  
-  - `TfidfVectorizer`  
-  - Deep learning models such as BERT or RoBERTa  
-  - Serving via REST API frameworks like Flask or FastAPI  
 
 ---
 
