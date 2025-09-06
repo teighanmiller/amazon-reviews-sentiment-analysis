@@ -2,7 +2,7 @@ from preprocessing import Preprocessing
 from sentiment_analysis import SentimentAnalysis
 
 TRAINING_DATA_PATH = "data/train.ft.txt"
-TEST_DATA_PATH = "data/test.fit.txt"
+TEST_DATA_PATH = "data/test.ft.txt"
 
 
 def train_model(training_filepath: str):
@@ -34,5 +34,9 @@ def predict(filepath: str):
 
 
 if __name__ == "__main__":
+    print("Start model training....")
     train_model(TRAINING_DATA_PATH)
+    print("Finished model training.")
+    print("Start testing.")
     predict(TEST_DATA_PATH)
+    print("All processes finished.")
